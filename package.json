@@ -1,0 +1,26 @@
+{
+  "name": "lunas-core",
+  "private": true,
+  "version": "0.0.1",
+  "main": "dist/lunas.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.build.json && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@lunas-engine/eslint-config": "^1.0.0",
+    "@lunas-engine/prettier-config": "^1.0.0",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
+    "prettier": "^3.5.3",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1",
+    "vite-plugin-dts": "^4.5.3"
+  }
+}
