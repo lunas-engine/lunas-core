@@ -11,5 +11,8 @@ export default defineConfig({
       fileName: 'lunas',
     },
   },
+  esbuild: {
+    target: 'es2022',
+  },
   plugins: [dts({ include: 'src/lunas', rollupTypes: true })],
 });

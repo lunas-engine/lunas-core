@@ -1,7 +1,7 @@
 {
   "name": "lunas-core",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/lunas.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.build.json && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run"
   },
   "devDependencies": {
     "@lunas-engine/eslint-config": "^1.0.0",
@@ -21,6 +22,7 @@
     "prettier": "^3.5.3",
     "typescript": "~5.7.2",
     "vite": "^6.3.1",
-    "vite-plugin-dts": "^4.5.3"
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^3.1.1"
   }
 }
